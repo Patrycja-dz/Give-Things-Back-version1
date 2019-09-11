@@ -3,7 +3,7 @@ import React from "react";
 class AboutUs  extends React.Component {
     render() {
         return(
-            <div>
+            <div id='about'>
                 <p>o nas</p>
             </div>
         );

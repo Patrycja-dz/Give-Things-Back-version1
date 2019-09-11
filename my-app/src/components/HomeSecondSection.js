@@ -1,39 +1,36 @@
 import React from "react";
+// import {BrowserRouter,Switch,Route} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import {Link} from "react-scroll";
 
 class HomeSecondSection extends React.Component {
     render() {
         return (
             <div className="main-div">
-                <div className="first_img"></div>
-                <div className="nav-div">
-                    <nav>
-                        <ul className="nav-links">
-                            <li id="start-link">Start</li>
-                            <li>O co chodzi</li>
-                            <li>O nas</li>
-                            <li>Fundacje i organizacje</li>
-                            <li>Kontakt</li>
-                        </ul>
-                    </nav>
-                </div>
+                <div className="content">
                 <div className="heading-div">
                     <p className="first-p"> Zacznij pomagać !</p>
                     <p>Oddaj niechciane rzeczy w zaufane ręce</p>
 
-                <div className="div-for-btn">
-                    <div className="first-btn">
-                        <p>Oddaj <br/> rzeczy</p>
-                    </div>
-                    <div className="second-btn">
-                        <p>Zorganizuj<br/> zbiórkę</p>
-                    </div>
-                </div>
-                </div>
+                    <div className="div-for-btn">
+                        <NavLink to="/register">
+                            <div className="first-btn">
+                                <button>Oddaj <br/> rzeczy</button>
+                            </div>
+                        </NavLink>
+                        <NavLink to="/register">
+                            <div className="second-btn">
+                                <button>Zorganizuj<br/> zbiórkę</button>
 
+                            </div>
+                        </NavLink>
+                    </div>
+                </div>
+                </div>
             </div>
 
         );
     }
 }
 
-export  default HomeSecondSection;
+export default HomeSecondSection;

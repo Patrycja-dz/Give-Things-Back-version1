@@ -1,16 +1,16 @@
 .main-div {
-  width: 1024px;
-  height: 550px;
+  width: 100%;
+  height: 530px;
   border: 1px solid black;
+  background-image: url("../assets/Home-Hero-Image.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100% ;
+}
+.content{
+  width:1024px ;
+  margin:0 auto;
 }
 
-.first_img {
-  height: inherit;
-  border: 1px solid red;
-  width: 40%;
-  float: left;
-  //background-image: url("./../Home-Hero-Image.jpg");
-}
 
 .nav-div {
   width: 55%;
@@ -34,8 +34,8 @@ nav {
   white-space: pre;
   justify-content: space-around;
   word-spacing: 8px;
-  margin-right: 10px;
-  font-size: 1.1em;
+  //margin-right: 0px;
+  font-size: 18px;
   color:#3C3C3C; ;
 
 }
@@ -47,14 +47,16 @@ nav {
   align-items: center;
   margin-right: 15px;
   text-align: center;
-  //margin-left: 14px;
-  padding-left: 15px;
+  margin-left: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+
 
 }
 
 .heading-div {
   width: 55%;
-  height: 400px;
+  height: 390px;
   border: 1px solid cadetblue;
   float: right;
   font-size: 22px;
@@ -81,24 +83,38 @@ nav {
   display: flex;
   border: 1px solid pink;
   margin-top: 60px;
-}
-.first-btn{
-  border:1px solid #3C3C3C;
-  height: 80px;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 130px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-.second-btn{
-  border:1px solid #3C3C3C;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
+//.first-btn{
+//  border:1px solid #3C3C3C;
+//  height: 80px;
+//  justify-content: center;
+//  align-items: center;
+//  text-align: center;
+//  width: 130px;
+//  padding-top: 10px;
+//  padding-bottom: 10px;
+//}
+//.second-btn{
+//  border:1px solid #3C3C3C;
+//  height: 80px;
+//  justify-content: center;
+//  align-items: center;
+//  text-align: center;
+//  width: 130px;
+//  padding-top: 10px;
+//  padding-bottom: 10px;
+//}
+button{
+  width:150px;
+  height: 60px;
+  background-color: white;
+  border:1px solid #737373;
+  font-size: 20px;
+  color: #3C3C3C;
+  text-transform: uppercase;
   text-align: center;
-  width: 130px;
+  padding-bottom: 15px;
   padding-top: 10px;
-  padding-bottom: 10px;
 }

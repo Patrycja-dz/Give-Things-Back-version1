@@ -6,6 +6,7 @@ import AboutUs from "./AboutUs";
 import WhomWehelp from "./WhomWehelp";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import HomeNavigation from "./HomeNavigation";
 class Home extends React.Component {
     render() {
         return(
