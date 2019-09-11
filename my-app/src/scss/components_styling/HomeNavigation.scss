@@ -1,0 +1,31 @@
+.firstHeader {
+ width: 1024px;
+ height: 60px;
+ // border: 1px solid black ;
+}
+
+#hideHome {
+  color: pink;
+  text-decoration: none;
+  margin-left: 20px;
+  float: left;
+  margin-top: 17px;
+}
+
+#routeLinks {
+  text-decoration: none;
+  float: right;
+  white-space: pre;
+  margin-top: 17px;
+  color: #737373;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#routeLinks.regist {
+  border: 1px solid #FAD648;
+}
+
+.login {
+  margin-right: 25px;
+}

@@ -1,0 +1,104 @@
+.main-div {
+  width: 1024px;
+  height: 550px;
+  border: 1px solid black;
+}
+
+.first_img {
+  height: inherit;
+  border: 1px solid red;
+  width: 40%;
+  float: left;
+  //background-image: url("./../Home-Hero-Image.jpg");
+}
+
+.nav-div {
+  width: 55%;
+  display: flex;
+  float: right;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 40px;
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  white-space: pre;
+  justify-content: space-around;
+  word-spacing: 8px;
+  margin-right: 10px;
+  font-size: 1.1em;
+  color:#3C3C3C; ;
+
+}
+
+#start-link {
+  display: flex;
+  border: 1px solid #737373;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  text-align: center;
+  //margin-left: 14px;
+  padding-left: 15px;
+
+}
+
+.heading-div {
+  width: 55%;
+  height: 400px;
+  border: 1px solid cadetblue;
+  float: right;
+  font-size: 22px;
+  margin-top: 80px;
+}
+
+.heading-div p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3C3C3C;
+}
+.first-p{
+  margin-top: 50px;
+}
+.heading-div p:after{
+  content: "";
+  //background-image: url("././Signature.svg");
+}
+.div-for-btn{
+  height: 200px;
+  width: 430px;
+  display: flex;
+  border: 1px solid pink;
+  margin-top: 60px;
+}
+.first-btn{
+  border:1px solid #3C3C3C;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.second-btn{
+  border:1px solid #3C3C3C;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 130px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
