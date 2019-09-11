@@ -2,17 +2,8 @@
 @import  'settings/colors';
 @import 'settings/fonts';
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400,700&display=swap');
-@import 'components_styling/HomeNavigation';
-@import  'components_styling/HomeSecondSection';
-@import 'components_styling/HomeThreeColumns';
-@import  'components_styling/OnlyFourSteps';
-@import 'components_styling/AboutUs';
-@import 'components_styling/WhomWeHelp';
-@import 'components_styling/Contact';
-@import 'components_styling/Footer';
+
 
 body {
   font-family: $font-base;
-
-
 }
