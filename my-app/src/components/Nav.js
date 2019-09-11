@@ -6,7 +6,7 @@ const Nav = () => (
     <div className="nav-div">
     <nav>
         <ul className="nav-links">
-            <li id="start-link"><NavLink to="/">Start</NavLink></li>
+            <li id="start-link"><NavLink id="special-link" to="/">Start</NavLink></li>
             <li><Link to="about">O co chodzi</Link></li>
             <li>O nas</li>
             <li> Fundacje i organizacje</li>

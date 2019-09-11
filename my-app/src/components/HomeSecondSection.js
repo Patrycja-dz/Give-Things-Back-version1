@@ -11,7 +11,7 @@ class HomeSecondSection extends React.Component {
                 <div className="heading-div">
                     <p className="first-p"> Zacznij pomagać !</p>
                     <p>Oddaj niechciane rzeczy w zaufane ręce</p>
-
+                    <div className="decoration-div"></div>
                     <div className="div-for-btn">
                         <NavLink to="/register">
                             <div className="first-btn">
