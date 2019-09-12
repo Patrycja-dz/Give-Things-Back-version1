@@ -1,13 +1,13 @@
 import React from "react";
 
-class WhomWehelp  extends React.Component {
+class WhomWeHelp  extends React.Component {
     render() {
         return(
-            <div>
+            <div id="whomWeHelp">
                 <p>Komu pomagamy   </p>
             </div>
         );
     }
 }
 
-export  default WhomWehelp;
+export  default WhomWeHelp;
