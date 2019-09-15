@@ -1,68 +1,22 @@
 .main-div {
-  width: 100%;
+  width:100%;
   height: 530px;
   background-image: url("../assets/Home-Hero-Image.jpg");
   background-repeat: no-repeat;
   background-size: auto 100% ;
+
 }
 .content{
   width:1024px ;
   margin:0 auto;
 }
 
-
-.nav-div {
-  width: 55%;
-  display: flex;
-  float: right;
-  height: 60px;
-  margin-right: 50px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 40px;
-
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  white-space: pre;
-  justify-content: space-around;
-  word-spacing: 8px;
-  font-size: 18px;
-  color:#3C3C3C; ;
-
-}
-
-#start-link {
-  display: flex;
-  border: 1px solid #737373;
-  justify-content: center;
-  align-items: center;
-  margin-right: 15px;
-  text-align: center;
-  margin-left: 14px;
-  padding-left: 10px;
-  padding-right: 10px;
- color: #3C3C3C;
-  list-style: none;
-
-}
-#special-link{
-  text-decoration: none;
-  color: #3C3C3C;
-}
 .heading-div {
   width: 40%;
   height: 390px;
   float: right;
   font-size: 22px;
-margin-right: 30px;
+  margin-top: 30px;
 }
 
 .heading-div p {
@@ -73,7 +27,7 @@ margin-right: 30px;
   color: #3C3C3C;
 }
 .first-p{
-  margin-top: 50px;
+  padding-top: 40px;
 }
 
 .div-for-btn {
@@ -81,7 +35,7 @@ margin-right: 30px;
   width: 400px;
   display: flex;
   margin-top: 10px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-right: 50px;
 }
@@ -97,14 +51,18 @@ margin-right: 30px;
   margin-top: 40px;
 }
 button{
-  width:150px;
-  height: 60px;
+  width:170px;
+  height: 80px;
   background-color: white;
-  border:1px solid #737373;
-  font-size: 20px;
+  border:1px solid ;
+  border-top: 1px solid #737373;
+  box-shadow: #737373;
   color: #3C3C3C;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 15px;
   margin-top: 10px;
+  font-size: 23px;
+  font-weight: 100;
+
 }

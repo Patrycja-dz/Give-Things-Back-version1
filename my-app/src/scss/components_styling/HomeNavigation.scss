@@ -1,0 +1,62 @@
+.firstHeader {
+  height: 60px;
+}
+
+#routeLinks {
+  text-decoration: none;
+  float: right;
+  margin-top: 20px;
+  color: #737373;
+  margin-right: 30px;
+  font-size: 16px;
+}
+#routeLinks.login{
+  padding: 5px 8px;
+}
+
+#routeLinks.regist {
+  border: 1px solid #FAD648;
+  padding: 5px 8px;
+}
+
+.nav-div{
+  margin-top:10px;
+  height: 50px;
+}
+nav{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 18px;
+  color:#3C3C3C;
+  width: 45%;
+
+}
+li{
+  padding: 0 8px;
+}
+#start-link {
+  display: flex;
+  border: 1px solid #737373;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  text-align: center;
+  margin-left: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #3C3C3C;
+  list-style: none;
+
+}
+#special-link{
+  text-decoration: none;
+  color: #3C3C3C;
+  width: 50px;
+}

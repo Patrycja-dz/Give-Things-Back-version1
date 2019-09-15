@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import "./scss/main.scss";
 import {BrowserRouter, Route,Switch} from "react-router-dom";
 import Home from "./components/Home";
-//import Login from "./components/Login";
-//import Register from "./components/Register";
-//import Error from "./components/Error";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Error from "./components/Error";
 import HomeNavigation from "./components/HomeNavigation";
 
 class App extends Component {
@@ -15,9 +15,9 @@ class App extends Component {
                     <HomeNavigation/>
                     <Switch>
                         <Route path="/" component={Home} exact/>
-                        <Route path="/login" component={Home}/>
-                        <Route path="/register" component={Home}/>
-
+                        <Route path="/login" component={Login}/>
+                        <Route path="/register" component={Register}/>
+                        <Route component={Error}/>
                     </Switch>
                 </div>
             </BrowserRouter>
