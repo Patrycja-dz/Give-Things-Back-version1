@@ -1,0 +1,34 @@
+
+.wrapper{
+  width: 100%;
+  background-color: $yellowColor;
+  height:auto;
+}
+.columns_div{
+  width: 1024px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.column{
+  width: 300px;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: $darkGreyColor;
+
+}
+.column p{
+  padding: 5px;
+
+}
+#number{
+  font-size: 30px;
+}
+.uppercase_letters{
+  text-transform: uppercase;
+  font-weight:500;
+  font-size: 16px;
+}

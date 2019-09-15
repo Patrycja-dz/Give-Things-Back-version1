@@ -6,7 +6,7 @@
   text-decoration: none;
   float: right;
   margin-top: 20px;
-  color: #737373;
+  color: $greyColor;
   margin-right: 30px;
   font-size: 16px;
 }
@@ -15,7 +15,7 @@
 }
 
 #routeLinks.regist {
-  border: 1px solid #FAD648;
+  border: 1px solid $yellowColor;
   padding: 5px 8px;
 }
 
@@ -34,7 +34,7 @@ nav{
   list-style: none;
   justify-content: space-around;
   font-size: 18px;
-  color:#3C3C3C;
+  color:$darkGreyColor;
   width: 45%;
 
 }
@@ -43,7 +43,7 @@ li{
 }
 #start-link {
   display: flex;
-  border: 1px solid #737373;
+  border: 1px solid $greyColor;
   justify-content: center;
   align-items: center;
   margin-right: 15px;
@@ -51,12 +51,12 @@ li{
   margin-left: 14px;
   padding-left: 10px;
   padding-right: 10px;
-  color: #3C3C3C;
+  color: $darkGreyColor;
   list-style: none;
 
 }
 #special-link{
   text-decoration: none;
-  color: #3C3C3C;
+  color: $darkGreyColor;
   width: 50px;
 }
