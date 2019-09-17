@@ -4,11 +4,11 @@ import {NavLink} from "react-router-dom";
 class Register extends React.Component {
     state = {
         email: "",
-        pass: "",
+        password1: "",
         errors: [],
         error: [],
         newarray: [],
-        nextpass: "",
+        password2: "",
 
     };
     handleChange = e => {
@@ -24,10 +24,10 @@ class Register extends React.Component {
         if (this.state.email.indexOf("@") === -1) {
             errors.push('Podany email jest nieprawidłowy!')
         }
-        if (this.state.pass.length <= 6) {
+        if (this.state.password1.length <= 6) {
             error.push('Podane hasło jest za krótkie');
         }
-        if (this.state.nextpass.length !== (this.state.pass.length)){
+        if (this.state.password2.length !== (this.state.password1.length)){
             newarray.push('Podane hasła nie zgadzają się')
         }
         this.setState({
@@ -55,7 +55,7 @@ class Register extends React.Component {
                                type="password"/>
                         <p className="error_p">{this.state.error.map((err, index) => <p key={index}>{err}</p>)}</p>
                         <label><span>Powtórz hasło</span></label>
-                        <input onChange={this.handleChange} name="nextpass" value={this.state.nextpass}
+                        <input onChange={this.handleChange} name="nextpass" value={this.state.password2}
                                type="password"/>
                         <p className="error_p">{this.state.newarray.map((err, index) => <p
                             key={index}>{err}</p>)}</p>

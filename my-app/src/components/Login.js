@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 class Login extends React.Component {
     state = {
         email: "",
-        pass: "",
+        password1: "",
         errors: [],
         error:[],
 
@@ -21,7 +21,7 @@ class Login extends React.Component {
         if (this.state.email.indexOf("@") === -1) {
             errors.push('Podany email jest nieprawidłowy!')
         }
-        if (this.state.pass.length <= 6) {
+        if (this.state.password1.length <= 6) {
             error.push('Podane hasło jest za krótkie');
         }
         this.setState({
@@ -44,7 +44,7 @@ class Login extends React.Component {
                                autoComplete="off"/>
                         <p className="error_p">{this.state.errors.map((err,index)=><p key={index}>{err}</p> )}</p>
                         <label className="password"><span>Hasło</span></label>
-                        <input onChange={this.handleChange} name="pass" value={this.state.pass}
+                        <input onChange={this.handleChange} name="pass" value={this.state.password1}
                                type="password"/>
                         <p className="error_p">{this.state.error.map((err,index)=><p key={index}>{err}</p> )}</p>
                     </div>
