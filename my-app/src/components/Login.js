@@ -6,6 +6,7 @@ class Login extends React.Component {
         email: "",
         pass: "",
         errors: [],
+        error:[],
 
     };
     handleChange = e => {
@@ -16,38 +17,36 @@ class Login extends React.Component {
     handleSubmit = e => {
         e.preventDefault();
         const errors = [];
+        const error=[];
         if (this.state.email.indexOf("@") === -1) {
             errors.push('Podany email jest nieprawidłowy!')
         }
         if (this.state.pass.length <= 6) {
-            errors.push('Podane hasło jest za krótkie');
+            error.push('Podane hasło jest za krótkie');
         }
         this.setState({
             errors: errors,
+            error:error,
         })
 
     };
 
     render() {
-        const erorrsMessages = (
-            <div className="error_div">
-                {this.state.errors.map((err, index) => <p key={index}>{err}</p>)}
-            </div>
-        );
+
         return (
             <div>
                 <p className="log_in">Zaloguj się</p>
                 <div className="image"></div>
                 <div className="form_content">
                     <div className="login_form" noValidate>
-                        {erorrsMessages}
                         <label><span>Email</span></label>
                         <input onChange={this.handleChange} name="email" value={this.state.email} type="email"
                                autoComplete="off"/>
+                        <p className="error_p">{this.state.errors.map((err,index)=><p key={index}>{err}</p> )}</p>
                         <label className="password"><span>Hasło</span></label>
                         <input onChange={this.handleChange} name="pass" value={this.state.pass}
                                type="password"/>
-
+                        <p className="error_p">{this.state.error.map((err,index)=><p key={index}>{err}</p> )}</p>
                     </div>
 
 
