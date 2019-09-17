@@ -1,0 +1,76 @@
+.register_p{
+  text-align: center;
+  margin:10px auto;
+  padding-top: 15px;
+  font-size: 27px;
+  font-family: $font-alt;
+  color: $darkGreyColor;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.register_content{
+  width: 370px;
+  height: 220px;
+  margin: 20px auto;
+}
+.register_form_btn{
+  width: 470px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+
+}
+.register_form{
+  width:370px ;
+  display: flex;
+  background: $azureColor;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  outline: none;
+}
+.register_form input{
+  height: 15%;
+  font-size: 18px;
+  margin-right: 60px;
+  margin-left: 60px;
+  border: none;
+  background: $azureColor;
+  border-bottom: 2px solid $greyColor;
+  color: $greyColor;
+  outline: none;
+}
+.register_form label{
+  margin-left: 55px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.image_settings{
+  background-image: url("../assets/Decoration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18%;
+  height: 30px;
+  display: block;
+  margin: 0px auto;
+}
+.send{
+  width: 110px;
+  font-size: 14px;
+  height: 30px;
+  border: none;
+  background: #FFFFFF;
+  outline: none;
+  margin-left: -10px;
+}
+.register_btn{
+  border: 3px solid $azureColor;
+  padding: 5px;
+  margin-left: 40px;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  height: 50px;
+  font-size: 14px;
+}
