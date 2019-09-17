@@ -1,0 +1,48 @@
+#aboutUs{
+  width:100%;
+  height: 530px;
+  background-image: url("../assets/People.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100% ;
+  background-position: right;
+}
+.about_div{
+  width: 43%;
+  height: 530px;
+}
+#about{
+  text-align: center;
+  padding-top: 30px;
+  font-size: 28px;
+  font-family: $font-base;
+  font-weight: 400;
+  color:$darkGreyColor;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.svg_div{
+  background-image: url("../assets/Decoration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40%;
+  height: 30px;
+  display: block;
+  margin:0 auto;
+}
+.about_text{
+  text-align: center;
+  padding-top: 30px ;
+  margin: 0 50px;
+  font-size: 20px;
+  color:$darkGreyColor;
+}
+.signature{
+  width: 80%;
+  height: 130px;
+  margin-top: 30px;
+  margin-left: 40px;
+  background-image: url("../assets/Signature.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+}
