@@ -1,0 +1,24 @@
+#whomWeHelp{
+  width: 1024px;
+  margin: 40px auto;
+}
+.helping{
+  text-align: center;
+  font-size:27px;
+}
+
+.initiative_div ul{
+  display: flex;
+  padding: 15px;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 16px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.initiative_div li:hover{
+  border: 1px solid $darkGreyColor;
+  padding: 10px;
+
+}

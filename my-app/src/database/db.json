@@ -1,0 +1,116 @@
+{
+  "fundacje": [
+    {
+      "id": 1,
+      "nazwa": "Fundacja Dbam o Zdrowie",
+      "cele": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+      "rzeczy": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+    },
+    {
+      "id": 2,
+      "nazwa": "Fundacja Dla dzieci",
+      "cele": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
+      "rzeczy": "ubrania, meble, zabawki"
+    },
+    {
+      "id": 3,
+      "nazwa": "Fundacja Bez domu",
+      "cele": "Cel i misja: Pomoc dla osób nie posiadajacyxh miejsca zamieszkania",
+      "rzeczy": "ubrania, meble, zabawki"
+    },
+    {
+    "id": 4,
+    "nazwa": "Fundacja Mimo Wszystko",
+    "cele": "Cel i misja: Pomoc dla osób niepełnosprawnych intelektualnie oraz pozostających w trudnych sytuacjach",
+    "rzeczy": "ubrania, zabawki"
+    },
+    {
+    "id": 5,
+    "nazwa": "Podaruj nadzieję",
+    "cele": "Cel i misja: Pomoc dla kobiet i maltretowanych dzieci ",
+    "rzeczy": "ubrania, zabawki"
+    },
+    {
+    "id": 6,
+    "nazwa": "Fundacji Inicjatyw Lokalnych i Ekonomii Społecznej",
+    "cele": "Cel i misja: Pomoc przy finansowaniu rehabilitacji niepełnosprawnym",
+    "rzeczy": "ubrania, buty, płyty, sprzęt AGD"
+    },
+    {
+      "id": 7,
+      "nazwa": "Fundacja Sue Ryder ",
+      "cele": "Cel i misja: Zebrane środki wspierają cele charytatywne",
+      "rzeczy": "ubrania"
+    },
+    {
+      "id": 8,
+      "nazwa": "Fundacja Boże Atelier",
+      "cele": "Cel i misja: Pomoc najuboższym",
+      "rzeczy": "ubrania"
+    },
+    {
+      "id": 9,
+      "nazwa": "Fundacja Po Pierwsze Człowiek",
+      "cele": "Cel i misja: Wspomaganie osób bezdomnych bądż też zagrożonych  bezdomnością",
+      "rzeczy": "ubrania,sprzęt AGD"
+    }
+  ],
+  "organizacje": [
+    {
+      "id": 1,
+      "nazwa": "Organizacja Lorem 1",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    },
+    {
+      "id": 2,
+      "nazwa": "Organizacja Lorem 2",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    },
+    {
+      "id": 3,
+      "nazwa": "Organizacja Lorem 3",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    },
+    {
+      "id": 4,
+      "nazwa": "Organizacja Lorem 4",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    },
+    {
+      "id": 5,
+      "nazwa": "Organizacja Lorem 5",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    },
+    {
+      "id": 6,
+      "nazwa": "Organizacja Lorem 6",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    }
+  ],
+  "zbiorki": [
+    {
+      "id": 1,
+      "nazwa": "Zbiórka Lorem 1",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    },
+    {
+      "id": 2,
+      "nazwa": "Zbiórka Lorem 2",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    },
+    {
+      "id": 3,
+      "nazwa": "Zbiórka Lorem 2",
+      "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+      "rzeczy": "lorem, ipsum, dolor, amet"
+    }
+  ]
+}

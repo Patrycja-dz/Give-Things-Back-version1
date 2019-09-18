@@ -44,7 +44,7 @@ class Login extends React.Component {
                                autoComplete="off"/>
                         <p className="error_p">{this.state.errors.map((err,index)=><p key={index}>{err}</p> )}</p>
                         <label className="password"><span>Hasło</span></label>
-                        <input onChange={this.handleChange} name="pass" value={this.state.password1}
+                        <input onChange={this.handleChange} name="password1" value={this.state.password1}
                                type="password"/>
                         <p className="error_p">{this.state.error.map((err,index)=><p key={index}>{err}</p> )}</p>
                     </div>
@@ -56,8 +56,8 @@ class Login extends React.Component {
                 <div className="login_form_btn">
                     <ul className="login_form_div">
                         <button className="submit">Założ konto</button>
-                        <button className="log_btn" onClick={this.handleSubmit}><NavLink to="/register">Zaloguj
-                            się</NavLink></button>
+                        <button className="log_btn" onClick={this.handleSubmit}><NavLink  className="register_link" to="/register"><p>Zaloguj
+                            się</p></NavLink></button>
 
                     </ul>
                 </div>

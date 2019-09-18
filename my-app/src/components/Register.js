@@ -7,7 +7,7 @@ class Register extends React.Component {
         password1: "",
         errors: [],
         error: [],
-        newarray: [],
+        err: [],
         password2: "",
 
     };
@@ -20,7 +20,7 @@ class Register extends React.Component {
         e.preventDefault();
         const errors = [];
         const error = [];
-        const newarray = [];
+        const err = [];
         if (this.state.email.indexOf("@") === -1) {
             errors.push('Podany email jest nieprawidłowy!')
         }
@@ -28,12 +28,12 @@ class Register extends React.Component {
             error.push('Podane hasło jest za krótkie');
         }
         if (this.state.password2.length !== (this.state.password1.length)){
-            newarray.push('Podane hasła nie zgadzają się')
+            err.push('Podane hasła nie zgadzają się')
         }
         this.setState({
             errors: errors,
             error: error,
-            newarray: newarray,
+            err: err,
         })
 
     };
@@ -51,13 +51,13 @@ class Register extends React.Component {
                                autoComplete="off"/>
                         <p className="error_p">{this.state.errors.map((err, index) => <p key={index}>{err}</p>)}</p>
                         <label><span>Hasło</span></label>
-                        <input onChange={this.handleChange} name="pass" value={this.state.pass}
+                        <input onChange={this.handleChange} name="password1" value={this.state.pass}
                                type="password"/>
                         <p className="error_p">{this.state.error.map((err, index) => <p key={index}>{err}</p>)}</p>
                         <label><span>Powtórz hasło</span></label>
-                        <input onChange={this.handleChange} name="nextpass" value={this.state.password2}
+                        <input onChange={this.handleChange} name="password2" value={this.state.password2}
                                type="password"/>
-                        <p className="error_p">{this.state.newarray.map((err, index) => <p
+                        <p className="error_p">{this.state.err.map((err, index) => <p
                             key={index}>{err}</p>)}</p>
                     </div>
                 </div>
@@ -66,8 +66,8 @@ class Register extends React.Component {
                 <div className="register_form_btn">
                     <ul className="login_form_div">
                         <button className="send" onClick={this.handleSubmit}>Założ konto</button>
-                        <button className="register_btn" ><NavLink to="/register">Zaloguj
-                            się</NavLink></button>
+                        <button className="register_btn" ><NavLink className="register_link" to="/register"><p>Zaloguj
+                            się</p></NavLink></button>
 
                     </ul>
                 </div>
