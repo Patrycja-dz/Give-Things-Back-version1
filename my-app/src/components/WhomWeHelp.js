@@ -1,10 +1,10 @@
 import React from "react";
-
+//
 class WhomWeHelp  extends React.Component {
-    render() {
+ render() {
         return(
             <div id="whomWeHelp">
-                <p>Komu pomagamy   </p>
+
             </div>
         );
     }
