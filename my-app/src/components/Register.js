@@ -27,7 +27,9 @@ class Register extends React.Component {
         if (this.state.password1.length <= 6) {
             error.push('Podane hasło jest za krótkie');
         }
+
         if (this.state.password2.length !== (this.state.password1.length)){
+
             err.push('Podane hasła nie zgadzają się')
         }
         this.setState({
@@ -66,8 +68,10 @@ class Register extends React.Component {
                 <div className="register_form_btn">
                     <ul className="login_form_div">
                         <button className="send" onClick={this.handleSubmit}>Założ konto</button>
+
                         <button className="register_btn" ><NavLink className="register_link" to="/register"><p>Zaloguj
                             się</p></NavLink></button>
+
 
                     </ul>
                 </div>

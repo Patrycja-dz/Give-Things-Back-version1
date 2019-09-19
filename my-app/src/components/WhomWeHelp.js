@@ -1,4 +1,5 @@
 import React from "react";
+
 import Data from "./Data";
 
 const apiUrl = "http://localhost:3001";
@@ -48,6 +49,7 @@ class WhomWeHelp extends React.Component {
                     </ul>
                 </div>
                 <Data dane={this.state.dane}/>
+
 
             </div>
         );

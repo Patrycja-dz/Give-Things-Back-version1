@@ -11,6 +11,7 @@
       "nazwa": "Fundacja Dla dzieci",
       "cele": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
       "rzeczy": "ubrania, meble, zabawki"
+
     },
     {
       "id": 3,
@@ -53,6 +54,7 @@
       "nazwa": "Fundacja Po Pierwsze Człowiek",
       "cele": "Cel i misja: Wspomaganie osób bezdomnych bądż też zagrożonych  bezdomnością",
       "rzeczy": "ubrania,sprzęt AGD"
+
     }
   ],
   "organizacje": [
@@ -61,6 +63,7 @@
       "nazwa": "Organizacja Lorem 1",
       "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       "rzeczy": "lorem, ipsum, dolor, amet"
+
     },
     {
       "id": 2,
@@ -114,3 +117,4 @@
     }
   ]
 }
+
