@@ -11,7 +11,6 @@
       "nazwa": "Fundacja Dla dzieci",
       "cele": "Cel i misja: Pomoc dzieciom z ubogich rodzin",
       "rzeczy": "ubrania, meble, zabawki"
-
     },
     {
       "id": 3,
@@ -20,22 +19,22 @@
       "rzeczy": "ubrania, meble, zabawki"
     },
     {
-    "id": 4,
-    "nazwa": "Fundacja Mimo Wszystko",
-    "cele": "Cel i misja: Pomoc dla osób niepełnosprawnych intelektualnie oraz pozostających w trudnych sytuacjach",
-    "rzeczy": "ubrania, zabawki"
+      "id": 4,
+      "nazwa": "Fundacja Mimo Wszystko",
+      "cele": "Cel i misja: Pomoc dla osób niepełnosprawnych intelektualnie oraz pozostających w trudnych sytuacjach",
+      "rzeczy": "ubrania, zabawki"
     },
     {
-    "id": 5,
-    "nazwa": "Podaruj nadzieję",
-    "cele": "Cel i misja: Pomoc dla kobiet i maltretowanych dzieci ",
-    "rzeczy": "ubrania, zabawki"
+      "id": 5,
+      "nazwa": "Podaruj nadzieję",
+      "cele": "Cel i misja: Pomoc dla kobiet i maltretowanych dzieci ",
+      "rzeczy": "ubrania, zabawki"
     },
     {
-    "id": 6,
-    "nazwa": "Fundacji Inicjatyw Lokalnych i Ekonomii Społecznej",
-    "cele": "Cel i misja: Pomoc przy finansowaniu rehabilitacji niepełnosprawnym",
-    "rzeczy": "ubrania, buty, płyty, sprzęt AGD"
+      "id": 6,
+      "nazwa": "Fundacji Inicjatyw Lokalnych i Ekonomii Społecznej",
+      "cele": "Cel i misja: Pomoc przy finansowaniu rehabilitacji niepełnosprawnym",
+      "rzeczy": "ubrania, buty, płyty, sprzęt AGD"
     },
     {
       "id": 7,
@@ -54,7 +53,6 @@
       "nazwa": "Fundacja Po Pierwsze Człowiek",
       "cele": "Cel i misja: Wspomaganie osób bezdomnych bądż też zagrożonych  bezdomnością",
       "rzeczy": "ubrania,sprzęt AGD"
-
     }
   ],
   "organizacje": [
@@ -63,7 +61,6 @@
       "nazwa": "Organizacja Lorem 1",
       "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       "rzeczy": "lorem, ipsum, dolor, amet"
-
     },
     {
       "id": 2,
@@ -115,6 +112,22 @@
       "cele": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       "rzeczy": "lorem, ipsum, dolor, amet"
     }
+  ],
+  "users": [
+    {
+      "email": "dupa@dupa.pl",
+      "password1": "111111",
+      "id": 1
+    },
+    {
+      "email": "dupa@dupa.pl",
+      "password1": "1111111",
+      "id": 2
+    },
+    {
+      "email": "shfjpok[dl@k",
+      "password1": "1234567",
+      "id": 3
+    }
   ]
 }
-
