@@ -5,7 +5,6 @@ import OnlyFourSteps from "./OnlyFourSteps";
 import AboutUs from "./AboutUs";
 import WhomWeHelp from "./WhomWeHelp";
 import Contact from "./Contact";
-import Footer from "./Footer";
 import HomeNavigation from "./HomeNavigation";
 class Home extends React.Component {
     render() {
@@ -17,7 +16,6 @@ class Home extends React.Component {
                <AboutUs/>
                <WhomWeHelp/>
                <Contact/>
-               <Footer/>
             </div>
         );
     }

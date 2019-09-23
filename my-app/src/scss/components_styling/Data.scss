@@ -1,0 +1,37 @@
+
+.organization_div{
+  margin: 10px auto;
+  padding-top: 10px;
+}
+.organization_div ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+}
+.first_data{
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  border-bottom: 2px solid $greyColor;
+  padding-bottom: 10px;
+}
+.first_data p{
+  color: $darkGreyColor;
+}
+.last_thing{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -40px;
+
+}
+.first_organization{
+  font-size: 20px;
+  font-family: $font-alt;
+}
+.second_organization{
+  font-style: italic;
+}

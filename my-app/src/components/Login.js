@@ -18,7 +18,7 @@ class Login extends React.Component {
         e.preventDefault();
         const errors = [];
         const error=[];
-        if (this.state.email.indexOf("@") === -1) {
+        if (this.state.email.indexOf("@") === -1 || this.state.email.indexOf(".") === -1) {
             errors.push('Podany email jest nieprawidłowy!')
         }
         if (this.state.password1.length <= 6) {
@@ -56,8 +56,8 @@ class Login extends React.Component {
                 <div className="login_form_btn">
                     <ul className="login_form_div">
                         <button className="submit">Założ konto</button>
-                        <button className="log_btn" onClick={this.handleSubmit}><NavLink to="/register">Zaloguj
-                            się</NavLink></button>
+                        <button className="log_btn" onClick={this.handleSubmit}><NavLink  className="register_link" to="/register"><p>Zaloguj
+                            się</p></NavLink></button>
 
                     </ul>
                 </div>

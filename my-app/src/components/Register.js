@@ -5,7 +5,7 @@ class Register extends React.Component {
     state = {
         email: "",
         password1: "",
-        errors: [],
+         errors: [],
         error: [],
         err: [],
         password2: "",
@@ -21,13 +21,15 @@ class Register extends React.Component {
         const errors = [];
         const error = [];
         const err = [];
-        if (this.state.email.indexOf("@") === -1) {
+        if (this.state.email.indexOf("@") === -1 || this.state.email.indexOf(".") === -1) {
             errors.push('Podany email jest nieprawidłowy!')
         }
         if (this.state.password1.length <= 6) {
             error.push('Podane hasło jest za krótkie');
         }
-        if (this.state.password2.length !== (this.state.password1.length)) {
+
+        if (this.state.password2.length !== (this.state.password1.length)){
+
             err.push('Podane hasła nie zgadzają się')
         }
         this.setState({
@@ -35,6 +37,19 @@ class Register extends React.Component {
             error: error,
             err: err,
         })
+
+         if (!errors.length && !error.length && !err.length) {
+            fetch('http://localhost:3001/users', {
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: this.state.email,
+                    password1: this.state.password1
+                })
+            }).then(() => this.props.history.push('/'))
+        }
 
     };
 
@@ -51,7 +66,7 @@ class Register extends React.Component {
                                autoComplete="off"/>
                         <p className="error_p">{this.state.errors.map((err, index) => <p key={index}>{err}</p>)}</p>
                         <label><span>Hasło</span></label>
-                        <input onChange={this.handleChange} name="password1" value={this.state.pass}
+                        <input onChange={this.handleChange} name="password1" value={this.state.password1}
                                type="password"/>
                         <p className="error_p">{this.state.error.map((err, index) => <p key={index}>{err}</p>)}</p>
                         <label><span>Powtórz hasło</span></label>
@@ -66,8 +81,10 @@ class Register extends React.Component {
                 <div className="register_form_btn">
                     <ul className="login_form_div">
                         <button className="send" onClick={this.handleSubmit}>Założ konto</button>
-                        <button className="register_btn"><NavLink to="/register">Zaloguj
-                            się</NavLink></button>
+
+                        <button className="register_btn" ><NavLink className="register_link" to="/register"><p>Zaloguj
+                            się</p></NavLink></button>
+
 
                     </ul>
                 </div>
