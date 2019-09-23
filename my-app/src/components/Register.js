@@ -5,7 +5,7 @@ class Register extends React.Component {
     state = {
         email: "",
         password1: "",
-        errors: [],
+         errors: [],
         error: [],
         err: [],
         password2: "",
@@ -21,7 +21,7 @@ class Register extends React.Component {
         const errors = [];
         const error = [];
         const err = [];
-        if (this.state.email.indexOf("@") === -1) {
+        if (this.state.email.indexOf("@") === -1 || this.state.email.indexOf(".") === -1) {
             errors.push('Podany email jest nieprawidłowy!')
         }
         if (this.state.password1.length <= 6) {
@@ -38,7 +38,7 @@ class Register extends React.Component {
             err: err,
         })
 
-        if (!errors.length && !error.length && !err.length) {
+         if (!errors.length && !error.length && !err.length) {
             fetch('http://localhost:3001/users', {
                 method: 'POST',
                 headers:{
@@ -66,7 +66,7 @@ class Register extends React.Component {
                                autoComplete="off"/>
                         <p className="error_p">{this.state.errors.map((err, index) => <p key={index}>{err}</p>)}</p>
                         <label><span>Hasło</span></label>
-                        <input onChange={this.handleChange} name="password1" value={this.state.pass}
+                        <input onChange={this.handleChange} name="password1" value={this.state.password1}
                                type="password"/>
                         <p className="error_p">{this.state.error.map((err, index) => <p key={index}>{err}</p>)}</p>
                         <label><span>Powtórz hasło</span></label>

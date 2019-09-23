@@ -18,7 +18,7 @@ class Login extends React.Component {
         e.preventDefault();
         const errors = [];
         const error=[];
-        if (this.state.email.indexOf("@") === -1) {
+        if (this.state.email.indexOf("@") === -1 || this.state.email.indexOf(".") === -1) {
             errors.push('Podany email jest nieprawidłowy!')
         }
         if (this.state.password1.length <= 6) {
