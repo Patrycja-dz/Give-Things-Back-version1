@@ -5,6 +5,7 @@ class Contact extends React.Component {
         name: "",
         email: "",
         message: "",
+        contact:true,
         errors1: [],
         errors2: [],
         errors3: [],
@@ -45,7 +46,16 @@ class Contact extends React.Component {
                     email:this.state.email,
                     message:this.state.message
                 })
-            }).then(()=>this.props.history.push('/'))
+            })  .then(r => r.json())
+                .then(r => this.setState({
+                contact: this.state.contact ? "" : "Wiadomość została pomyślnie wysłana!"
+            }))
+
+                 .then(() => this.props.history.push('/'))
+                    .catch(err=>{
+                        console.log(err)
+                    })
+
         }
 
     }
@@ -59,10 +69,11 @@ class Contact extends React.Component {
                         <p id="contact_with">Skontaktuj się z nami</p>
                         <div id="decoration"></div>
 
+                        <h3>{this.state.contact}</h3>
                         <div className="input_form" noValidate>
                             <label>
                                 <span>Wpisz swoje imię</span>
-                                <input onChange={this.handleOnChange} name="text" value={this.state.name} type="text"
+                                <input onChange={this.handleOnChange} name="name" value={this.state.name} type="text"
                                        placeholder="Krzysztof" autoComplete="off"/>
                                 <p className="errors1">{this.state.errors1.map((err, index) => <p
                                     key={index}>{err}</p>)}</p>
