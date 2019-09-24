@@ -8,6 +8,8 @@ class WhomWeHelp extends React.Component {
     state = {
         fund: "fundacje",
         dane: [],
+        currentPage:1,
+        danePerPages:3
     };
 
     componentDidMount() {
